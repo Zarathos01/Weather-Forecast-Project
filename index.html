@@ -3,7 +3,7 @@
 
 <head>
     <title>Weather Forecast</title>
-    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -30,43 +30,29 @@
         <div class="containers-grid">
             <div class="container1">
                 <div class="loc">
-                    <label class="label-1" for="location">Choose your location (Region Egypt)</label>
-                    <input for="location" class="location-input" list="location" name="prog">
-                    <datalist id="location">
-                        <option value="Cairo"></option>
-                        <option value="Alexandria"></option>
-                        <option value="Giza"></option>
-                        <option value="Shubra El-Kheima"></option>
-                        <option value="Port Said"></option>
-                        <option value="Suez"></option>
-                        <option value="El Mansura"></option>
-                        <option value="Luxor"></option>
-                        <option value="Asyut"></option>
-                        <option value="Minya"></option>
-                        <option value="Beni Suef"></option>
-                        <option value="Fayoum"></option>
-                        <option value="Ismaïlia"></option>
-                        <option value="Zagazig"></option>
-                        <option value="Damietta"></option>
-                        <option value="El Mahalla El Kubra"></option>
-                        <option value="Tanta"></option>
-                        <option value="Shebin El Kom"></option>
-                        <option value="Assiut"></option>
-                        <option value="Sohag"></option>
-                        <option value="Qena"></option>
-                        <option value="Aswan"></option>
-                        <option value="Shibin El-Kom"></option>
-                    </datalist>
+                    <div class="l">
+                        <img src="Icons/location.png" class="location-img">
+                        <label class="label-1" for="location">Location</label>
+                    </div>
+
+                    <input type="text" id="location" class="location-input" placeholder="Enter your location">
+
                 </div>
                 <button class="butt">Submit</button>
             </div>
             <div class="container2">
-                <div class="location">
-                    Cairo, Egypt
-                </div>
+                <div class="location"></div>
+                <img class="weather-image" src="Icons/location.png">
             </div>
         </div>
     </main>
+    <footer>
+        <div class=" copyright">
+            <div class="c"> &#169; 2024 The Weatherd. All Rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
