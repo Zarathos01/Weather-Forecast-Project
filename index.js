@@ -21,6 +21,7 @@ const fetchWeatherData = () => {
             if (data.cod != '200') {
                 locationDisplay.innerHTML = ` Location not found: ${city}`;
                 locationDisplay.style.color = 'red';
+                weatherImage.style.display="none";
                 return;
             }
 
