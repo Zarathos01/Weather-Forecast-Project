@@ -21,7 +21,7 @@ const fetchWeatherData = () => {
             if (data.cod != '200') {
                 locationDisplay.innerHTML = ` Location not found: ${city}`;
                 locationDisplay.style.color = 'red';
-                weatherImage.style.display="none";
+                weatherImage.style.display = "none";
                 return;
             }
 
@@ -35,26 +35,28 @@ const fetchWeatherData = () => {
             switch (data.weather[0].main) {
                 case 'Clear':
                     weatherImage.src = 'Icons/clear.png';
+                    document.body.className = 'clear';
                     break;
 
                 case 'Rain':
                     weatherImage.src = 'Icons/rain.png';
+                    document.body.className = 'rain';
                     break;
 
                 case 'Snow':
                     weatherImage.src = 'Icons/snow.png';
+                    document.body.className = 'snow';
                     break;
 
                 case 'Clouds':
                     weatherImage.src = 'Icons/cloud.png';
+                    document.body.className = 'clouds';
                     break;
 
                 case 'Haze':
                     weatherImage.src = 'Icons/mist.png';
+                    document.body.className = 'haze';
                     break;
-
-                default:
-                    weatherImage.src = 'Icons/location.png';
             }
 
 
