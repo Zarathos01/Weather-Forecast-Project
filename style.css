@@ -1,9 +1,45 @@
 body {
-    /* background-image: url(Icons/background2.jpeg);*/
+    /*background-image: url(Icons/background3.jpeg);*/
     background-color: rgb(0, 29, 44);
     display: flex;
     justify-content: center;
     height: 650px;
+    transition: background-color 0.2s ease;
+}
+
+.clear {
+    background-image: url(Icons/sunny\ background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rain {
+    background-image: url(Icons/rainy\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.snow {
+    background-image: url(Icons/snowy\ background\ .jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clouds {
+    background-image: url(Icons/cloudy\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.haze {
+    background-image: url(Icons/misty\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -26,7 +62,7 @@ header {
 .logo {
     font-family: "anton", sans-serif;
     color: rgb(224, 224, 224);
-    font-size: 35px;
+    font-size: 37px;
     white-space: nowrap;
 }
 
@@ -64,7 +100,7 @@ header {
     font-family: "Merriweather", serif;
     margin-left: 6px;
     margin-top: 25px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     display: block;
 }
@@ -74,8 +110,8 @@ header {
 }
 
 .location-img {
-    width: 22px;
-    height: 22px;
+    width: 21px;
+    height: 21px;
     margin-top: 22px;
     margin-left: 9px;
 }
@@ -160,6 +196,8 @@ header {
     margin-top: 20px;
     font-family: "Merriweather", serif;
 }
+
+
 
 .copyright {
     background-color: rgb(0, 20, 30);
