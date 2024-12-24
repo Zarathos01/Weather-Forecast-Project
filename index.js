@@ -3,6 +3,7 @@ const locationInput = document.querySelector('.location-input');
 const locationDisplay = document.querySelector('.container2 .location');
 const weatherImage = document.querySelector('.weather-image');
 
+
 const APIKey = '9077c13eacbca3f1488741f69944b653'; // Make sure this key is correct
 
 const fetchWeatherData = () => {
@@ -12,6 +13,7 @@ const fetchWeatherData = () => {
         alert('Please enter a location!');
         return;
     }
+
 
     // Fetch weather data   &lang=ar
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
@@ -56,6 +58,11 @@ const fetchWeatherData = () => {
                 case 'Haze':
                     weatherImage.src = 'Icons/mist.png';
                     document.body.className = 'haze';
+                    break;
+
+                case 'Fog':
+                    weatherImage.src = 'Icons/mist.png';
+                    document.body.className = 'fog';
                     break;
             }
 
