@@ -1,5 +1,4 @@
 body {
-    /*background-image: url(Icons/background3.jpeg);*/
     background-color: rgb(0, 29, 44);
     display: flex;
     justify-content: center;
@@ -36,6 +35,13 @@ body {
 }
 
 .haze {
+    background-image: url(Icons/misty\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fog {
     background-image: url(Icons/misty\ background.jpg);
     background-position: center;
     background-repeat: no-repeat;
